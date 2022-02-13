@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/perfect.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="perfectAlert">This function determines whether a number is perfect or not.</p>
+        <p>A number is said to be 'perfect' if the sum of its divisors is equal to twice the number.</p>
+        <form name="inputForm">
+            <label for="inputPlace">Type the number:</label><br>
+            <input type = "number" name="inputPlace">
+        </form><br>
+        <button onclick=" return testPerfect()">Click here for number input</button>
+        <p id="perfectResult"></p>
+    </body>
+</html>

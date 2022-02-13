@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/hybridization.js"></script>
+        <title>SciCalculator</title>
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="hybridizationAlert">
+            Calculate the genotypes and genotypic ratio of the offsprings produced by any two parents.
+            <br><b>Note: It has been assumed that Mendel's laws of Genetics are strictly followed.</b>
+        </p>
+        <form name="inputForm">
+            <label for="inputPlace1">Type the genotype of the first parent:</label><br>
+            <input type="text" name="inputPlace1"><br>
+            <label for="inputPlace2">Type the genotype of the second parent:</label><br>
+            <input type="text" name="inputPlace2">
+        </form><br>
+        <button onclick="testHybridization()">Input the genotypes of parents</button>
+        <p id="gametResult1"></p>
+        <p id="gametResult2"></p>
+        <p id="hybridizationResult"></p>
+    </body>
+</html>

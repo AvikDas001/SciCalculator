@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <script src="scripts/complex.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="complexAlert">Do many opeartions with complex numbers, like addition and multiplication</p>
+        <form name="inputForm">
+            <label for="inputPlace1">Type the first complex number:</label><br>
+            <input type="text" name="inputPlace1"><br>
+            <label for="inputPlace2">Type the second complex number:</label><br>
+            <input type="text" name="inputPlace2">
+        </form><br>
+        <button onclick="return addComplex()">Add</button><br>
+        <button onclick="return multiplyComplex()">Multiply</button>
+        <p id="complexResult"></p>
+    </body>
+</html>

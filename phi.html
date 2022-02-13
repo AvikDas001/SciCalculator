@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/phi.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="phiAlert">Calculate the value of Euler's phi function for a given integer n,
+            i.e. the number of integers not exceeding n that are relatively prime to n.</p>
+        <form name="inputForm">
+            <label for="inputPlace">Type the number:</label><br>
+            <input type = "number" name="inputPlace">
+        </form><br>
+        <button onclick="return testPhi()">Evaluate</button>
+        <p id="phiResult"></p>
+    </body>
+</html>

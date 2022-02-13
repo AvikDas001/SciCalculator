@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/binary.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="binaryAlert">Convert a decimal number (in base 10) to a binary number (base 2) and vice versa.</p>
+        <form name="inputForm">
+            <label for="inputPlace">Type the number:</label><br>
+            <input type = "number" name="inputPlace">
+        </form><br>
+        <button onclick="return testBinary()">Convert decimal to binary</button><br>
+        <button onclick="return testDecimal()">Convert binary to decimal</button>
+        <p id="binaryResult"></p>
+    </body>
+</html>

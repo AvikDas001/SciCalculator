@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/hcflcm.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="hcflcmAlert">Calculate the HCF(Highest Common Factor) and LCM(Lowest common multiple) of two positive integers.</p>
+        <form name="inputForm">
+            <label for="inputPlace1">Type the first number:</label><br>
+            <input type="number" name="inputPlace1"><br>
+            <label for="inputPlace2">Type the second number:</label><br>
+            <input type="number" name="inputPlace2">
+        </form><br>
+        <button onclick="return testHCFLCM()">Evaluate</button>
+        <p id="hcflcmResult"></p>
+    </body>
+</html>

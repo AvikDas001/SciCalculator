@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/quadratic.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="quadraticAlert">Calculate the solution of quadratic equation ax<sup>2</sup>+bx+c = 0.</p>
+        <form name="inputForm">
+            <label for="inputPlace1">Type the value of a:</label><br>
+            <input type="number" name="inputPlace1"><br>
+            <label for="inputPlace2">Type the value of b:</label><br>
+            <input type="number" name="inputPlace2"><br>
+            <label for="inputPlace3">Type the value of c:</label><br>
+            <input type="number" name="inputPlace3">
+        </form><br>
+        <button onclick="return testQuadratic()">Solve</button>
+        <p id="quadraticResult"></p>
+    </body>
+</html>

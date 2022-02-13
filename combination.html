@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/combination.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p id="combinationAlert">Calculate the value of combination of n-objects taken r at a time.</p>
+        <form name="inputForm">
+            <label for="inputPlace1">Type the value of n:</label><br>
+            <input type="number" name="inputPlace1"><br>
+            <label for="inputPlace2">Type the value of r:</label><br>
+            <input type="number" name="inputPlace2">
+        </form><br>
+        <button onclick="return testCombination()">Evaluate</button>
+        <p id="combinationResult"></p>
+    </body>
+</html>
