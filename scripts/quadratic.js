@@ -4,7 +4,7 @@ const spSign = (x) => {
             return "-";
         }
         else{
-            return "-"+x.toString();
+            return x.toString();
         }
     }
     else{

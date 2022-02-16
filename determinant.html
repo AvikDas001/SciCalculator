@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SciCalculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/determinant.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>SciCalculator</h1>
+        </header>
+        <p>Calculate the determinant of a square matrix.</p>
+        <p>Write the numbers in the same row sepearted with commas.</p>
+        <p>To go to a new row, hit Enter.</p>
+        <p><b>The matrix you input must be a square matrix, otherwise unexpected results might appear.</b></p>
+        <form name="inputForm">
+            <textarea rows="8"cols="20" name="inputPlace"></textarea>
+        </form><br>
+        <button onclick="return testDet()">Evaluate</button>
+        <p id="detResult"></p>
+    </body>
+</html>

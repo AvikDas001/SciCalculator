@@ -67,8 +67,20 @@ const multiplyComplex = () => {
     let N1 = document.forms["inputForm"]["inputPlace1"].value;
     let N2 = document.forms["inputForm"]["inputPlace2"].value;
     mainFunc(N1, N2);
-    document.getElementById("complexResult").innerHTML = `The value of (${N1})x(${N2}) is ${(array[0][0]*array[1][0])- 
+    document.getElementById("complexResult").innerHTML = `The value of (${N1}) x (${N2}) is ${(array[0][0]*array[1][0])- 
     (array[0][1]*array[1][1])} ${sign((array[0][0]*array[1][1]) + (array[0][1]*array[1][0]))}i`;
+    array = [[0,0],[0,0]];
+    return false;
+}
+const divideComplex = () => {
+    let N1 = document.forms["inputForm"]["inputPlace1"].value;
+    let N2 = document.forms["inputForm"]["inputPlace2"].value;
+    mainFunc(N1,N2);
+    let divideFactor = Math.pow(array[1][0],2)-Math.pow(array[1][1],2);
+    let proRealPart = (array[0][0]*array[1][0])+(array[0][1]*array[1][1]);
+    let proComplexPart = (array[0][1]*array[1][0])-(array[0][0]*array[1][1]);
+    document.getElementById("complexResult").innerHTML = `The value of (${N1}) x (${N2}) is ${proRealPart/divideFactor} 
+    ${sign(proComplexPart/divideFactor)}i`;
     array = [[0,0],[0,0]];
     return false;
 }

@@ -29,3 +29,7 @@ button{
 button:hover{
     background-color: blue;
 }
+textarea{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
