@@ -8,17 +8,17 @@ const mainFac = (n) => {
     }
     else{
         let arr1 = [];
-        for(let x = 1; x <= n; x++){
+        for(let x = 2; x <= Math.sqrt(n); x++){
             if(n % x == 0){
                 arr1.push(x);
             }
         }
-        if(arr1.length == 2){
+        if(arr1.length == 0){
             a.push(n);
         }
         else{
-            a.push(arr1[1]);
-            n = n/arr1[1];
+            a.push(arr1[0]);
+            n = n/arr1[0];
             mainFac(n);
         }
     }

@@ -8,12 +8,12 @@ const testPrime = () =>{
     }
     else{
         let arr = [];
-        for(let x = 1; x <= n; x++){
+        for(let x = 2; x <= Math.sqrt(n); x++){
             if(n % x == 0){
                 arr.push(x);
             }
         }
-        if(arr.length == 2){
+        if(arr.length == 0){
             document.getElementById("primeResult").innerHTML = `The number ${n} is prime.`;
         }
         else{
